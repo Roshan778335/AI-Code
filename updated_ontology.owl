@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/kdlku/ontologies/2024/11/untitled-ontology-10"
+         xmlns="http://www.semanticweb.org/kdlku/ontologies/2024/11/untitled-ontology-10#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/kdlku/ontologies/2024/11/untitled-ontology-10"/>
+
+<owl:ObjectProperty rdf:about="#flowsThrough"/>
+
+<owl:ObjectProperty rdf:about="#isLocatedIn"/>
+
+<owl:ObjectProperty rdf:about="#isPartOf"/>
+
+<owl:DatatypeProperty rdf:about="#Area"/>
+
+<owl:DatatypeProperty rdf:about="#Length"/>
+
+<owl:DatatypeProperty rdf:about="#Population"/>
+
+<owl:DatatypeProperty rdf:about="#height"/>
+
+<owl:Class rdf:about="#Continent"/>
+
+<owl:Class rdf:about="#Country"/>
+
+<owl:Class rdf:about="#Mountain"/>
+
+<owl:Class rdf:about="#River"/>
+
+<owl:NamedIndividual rdf:about="#Asia">
+  <rdf:type rdf:resource="#Continent"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#China">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Asia"/>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,596,961</Area>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,410,000,000</Population>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Europe">
+  <rdf:type rdf:resource="#Continent"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#France">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Europe"/>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">551,695</Area>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">68,000,000</Population>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ganges">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#India"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,525</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Germany">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Europe"/>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">357,386</Area>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">83,200,000</Population>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#India">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Asia"/>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,596,961</Area>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,410,000,000</Population>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Japan">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Asia"/>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">377,975</Area>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">126,500,000</Population>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mont_Blanc">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#France"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4,809</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mount_Everest">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#China"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8,848</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mount_Fuji">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#Japan"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,776</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rhine">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#Germany"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,233</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Seine">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#France"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">777</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yangtze">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#China"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6,300</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Russia">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Asia"/>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">146599183</Population>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17098242</Area>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#South Korea">
+  <rdf:type rdf:resource="#Country"/>
+  <isPartOf rdf:resource="#Asia"/>
+  <Population rdf:datatype="http://www.w3.org/2001/XMLSchema#string">51329899</Population>
+  <Area rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100032</Area>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Volga">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#Russia"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3530</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amur">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#Russia"/>
+  <flowsThrough rdf:resource="#China"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2824</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Danube">
+  <rdf:type rdf:resource="#River"/>
+  <flowsThrough rdf:resource="#Germany"/>
+  <Length rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2850</Length>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#K2">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#China"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8611</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kangchenjunga">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#India"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8586</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lhotse">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#China"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8516</height>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Makalu">
+  <rdf:type rdf:resource="#Mountain"/>
+  <isLocatedIn rdf:resource="#China"/>
+  <height rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8485</height>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
